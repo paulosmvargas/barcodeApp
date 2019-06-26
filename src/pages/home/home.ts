@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { BarcodeScannerOriginal, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
+import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 
 
 @Component({
@@ -14,7 +14,7 @@ export class HomePage {
   encodedData: any = {};
   scannedData: any = {};
   constructor(public navCtrl: NavController,
-              public scanner: BarcodeScannerOriginal) {
+              public scanner: BarcodeScanner) {
 
   }
 
